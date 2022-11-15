@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Détails de
+
+{% endblock %}
+
+{% block body %}
+    <main class="container">
+        <section class="row">
+            <div class="col-12">
+            {{dump()}} 
+                <p>
+                At this moment there are :<br>
+                - {{free}} free place .<br>
+                - {{full}} full space .<br>
+                - {{total}} total place <br>
+                 <p>
+
+                 <p> Please refer to the image below for more information about the places : </p>
+                  
+                <img src="{{ asset('assets/uploads/') ~ tsswira.getName }}" class="d-block w-100" alt=" error ">
+            </div>
+            
+                    
+        </section>
+    </main>
+{% endblock %}
